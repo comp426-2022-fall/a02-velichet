@@ -40,6 +40,9 @@ if (args.n) {
 else if (args.s) {
     Latitude =-args.s
 }
+else {
+    console.log('Latitude must be in range');
+}
 
 // to capture if Longitude
 if (args.e) {
@@ -47,6 +50,9 @@ if (args.e) {
 }
 else if (args.w) {
     Longitude =-args.w 
+}
+else {
+    console.log('Longitude must be in range');
 }
 
 let response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${Latitude}&longitude=${Longitude}&hourly=temperature_2m,precipitation&daily=precipitation_hours&temperature_unit=fahrenheit&timezone=auto`);
@@ -56,7 +62,7 @@ if (args.j) {
     console.log(data)
 }
 
-let days=0
+let days=1
 if (args.d) {
     days=args.d
 }
