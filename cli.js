@@ -63,7 +63,7 @@ if (args.j) {
 }
 
 let days=1
-if (args.d) {
+if (args.d || args.d==0) {
     days=args.d
 }
 
