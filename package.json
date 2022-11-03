@@ -1,0 +1,28 @@
+{
+  "name": "a02-velichet",
+  "version": "1.0.0",
+  "description": "Weather app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a02-velichet.git"
+  },
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "author": "@velichet",
+  "license": "GPL-3.0-or-late",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a02-velichet/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a02-velichet#readme",
+  "dependencies": {
+    "minimist": "^1.2.7",
+    "moment-timezone": "^0.5.38",
+    "node-fetch": "^3.2.10"
+  }
+}
